@@ -1,7 +1,10 @@
+//tranlated from Zig
+//
+//gcc -O3 -mno-fma -march=native -Wall main.c
+//clang -O3 -Wno-deprecated -mno-fma -mllvm -polly -mllvm -polly-parallel -lgomp -mllvm -polly-vectorizer=stripmine -lm -o main main.c -fopenmp=libomp -march=native -lcrypto
+
 #include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
-
 #include <stdbool.h>
 
 #include <openssl/md5.h>
