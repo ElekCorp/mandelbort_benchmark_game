@@ -1,20 +1,21 @@
-//tranlated from Zig
-//
-//gcc -O3 -mno-fma -march=native -Wall main.c
-//clang -O3 -Wno-deprecated -mno-fma -mllvm -polly -mllvm -polly-parallel -lgomp -mllvm -polly-vectorizer=stripmine -lm -o main main.c -fopenmp=libomp -march=native -lcrypto
-
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
+
 #include <stdbool.h>
 
 #include <openssl/md5.h>
 
 #define VEC_SIZE 8
-
+//typedef double double_V __attribute__((vector_size(VEC_SIZE * sizeof(double))));
 typedef struct Vec
 {
+    //double x __attribute__ ((vector_size(64)));
     double x[VEC_SIZE];
+    //double_V x;
 } Vec;
+
+typedef unsigned char Byte;
 
 void fill(Vec* in,double val)
 {
@@ -58,7 +59,7 @@ unsigned char mbrot8(Vec* cr, double civ)
     fill(&zi,0.0);
     fill(&tr,0.0);
     fill(&ti,0.0);
-    fill(&absz,0.0);
+    fill(&absz,0.0);//*/
     Vec tmp;
 
     for(int i=0;i<10;++i)
@@ -144,18 +145,28 @@ int main(int argc, char **argv)
         }
     }
 
-/*    printf("{ ");
+    /*printf("{ ");
     for(int x=0;x<size*chunk_size;++x)
        {
           printf("%d, ",pixels[x]);
        }// */
-       printf("\n");
+/*       printf("\n");
     unsigned char *output = MD5(pixels, size*chunk_size,NULL);
     for(int i=0;i<16;++i)
     {
 	    printf("%02x", (unsigned char)output[i]);
     }
     printf("\n");	
-    //free(output);
+    //free(output);//*/
+    FILE* out = (argc == 3) ? fopen(argv[2], "wb") : stdout;
+  fprintf(out, "P4\n%u %u\n", n, n);
+  fwrite(&pixels[0], n*size/VEC_SIZE, 1, out);
+
+  if (out != stdout)
+  {
+      fclose(out);
+  }
+  free(pixels);
+
     return 0;
 }
