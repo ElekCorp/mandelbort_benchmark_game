@@ -7,15 +7,10 @@
 #include <openssl/md5.h>
 
 #define VEC_SIZE 8
-//typedef double double_V __attribute__((vector_size(VEC_SIZE * sizeof(double))));
 typedef struct Vec
 {
-    //double x __attribute__ ((vector_size(64)));
     double x[VEC_SIZE];
-    //double_V x;
 } Vec;
-
-typedef unsigned char Byte;
 
 void fill(Vec* in,double val)
 {
@@ -150,7 +145,7 @@ int main(int argc, char **argv)
        {
           printf("%d, ",pixels[x]);
        }// */
-    printf("\n");
+       printf("\n");
     unsigned char *output = MD5(pixels, size*chunk_size,NULL);
     for(int i=0;i<16;++i)
     {
@@ -158,15 +153,5 @@ int main(int argc, char **argv)
     }
     printf("\n");	
     //free(output);//*/
-    FILE* out = (argc == 3) ? fopen(argv[2], "wb") : stdout;
-  fprintf(out, "P4\n%u %u\n", n, n);
-  fwrite(&pixels[0], n*size/VEC_SIZE, 1, out);
-
-  if (out != stdout)
-  {
-      fclose(out);
-  }
-  free(pixels);
-
     return 0;
 }

@@ -1,0 +1,4631 @@
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: '/usr/include/stdlib.h', Line: 483, Column: 16 }
+Function:        atoi
+Args:
+  - Callee:          strtol
+    DebugLoc:        { File: '/usr/include/stdlib.h', Line: 0, Column: 0 }
+  - String:          ' will not be inlined into '
+  - Caller:          atoi
+    DebugLoc:        { File: '/usr/include/stdlib.h', Line: 482, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Passed
+Pass:            loop-unroll
+Name:            FullyUnrolled
+DebugLoc:        { File: main_save.c, Line: 17, Column: 5 }
+Function:        fill
+Args:
+  - String:          'completely unrolled loop with '
+  - UnrollCount:     '8'
+  - String:          ' iterations'
+...
+--- !Passed
+Pass:            loop-unroll
+Name:            FullyUnrolled
+DebugLoc:        { File: main_save.c, Line: 26, Column: 7 }
+Function:        mul
+Args:
+  - String:          'completely unrolled loop with '
+  - UnrollCount:     '8'
+  - String:          ' iterations'
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: main_save.c, Line: 28, Column: 19 }
+Function:        mul
+Args:
+  - String:          'load of type '
+  - Type:            double
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: main_save.c, Line: 28, Column: 18 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: main_save.c, Line: 28, Column: 27 }
+Function:        mul
+Args:
+  - String:          'load of type '
+  - Type:            double
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: main_save.c, Line: 28, Column: 18 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: main_save.c, Line: 28, Column: 19 }
+Function:        mul
+Args:
+  - String:          'load of type '
+  - Type:            double
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: main_save.c, Line: 28, Column: 18 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: main_save.c, Line: 28, Column: 27 }
+Function:        mul
+Args:
+  - String:          'load of type '
+  - Type:            double
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: main_save.c, Line: 28, Column: 18 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: main_save.c, Line: 28, Column: 19 }
+Function:        mul
+Args:
+  - String:          'load of type '
+  - Type:            double
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: main_save.c, Line: 28, Column: 18 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: main_save.c, Line: 28, Column: 27 }
+Function:        mul
+Args:
+  - String:          'load of type '
+  - Type:            double
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: main_save.c, Line: 28, Column: 18 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: main_save.c, Line: 28, Column: 19 }
+Function:        mul
+Args:
+  - String:          'load of type '
+  - Type:            double
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: main_save.c, Line: 28, Column: 18 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: main_save.c, Line: 28, Column: 27 }
+Function:        mul
+Args:
+  - String:          'load of type '
+  - Type:            double
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: main_save.c, Line: 28, Column: 18 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: main_save.c, Line: 28, Column: 19 }
+Function:        mul
+Args:
+  - String:          'load of type '
+  - Type:            double
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: main_save.c, Line: 28, Column: 18 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: main_save.c, Line: 28, Column: 27 }
+Function:        mul
+Args:
+  - String:          'load of type '
+  - Type:            double
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: main_save.c, Line: 28, Column: 18 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: main_save.c, Line: 28, Column: 19 }
+Function:        mul
+Args:
+  - String:          'load of type '
+  - Type:            double
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: main_save.c, Line: 28, Column: 18 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: main_save.c, Line: 28, Column: 27 }
+Function:        mul
+Args:
+  - String:          'load of type '
+  - Type:            double
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: main_save.c, Line: 28, Column: 18 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: main_save.c, Line: 28, Column: 19 }
+Function:        mul
+Args:
+  - String:          'load of type '
+  - Type:            double
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: main_save.c, Line: 28, Column: 18 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: main_save.c, Line: 28, Column: 27 }
+Function:        mul
+Args:
+  - String:          'load of type '
+  - Type:            double
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: main_save.c, Line: 28, Column: 18 }
+...
+--- !Passed
+Pass:            loop-unroll
+Name:            FullyUnrolled
+DebugLoc:        { File: main_save.c, Line: 34, Column: 7 }
+Function:        minus
+Args:
+  - String:          'completely unrolled loop with '
+  - UnrollCount:     '8'
+  - String:          ' iterations'
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: main_save.c, Line: 36, Column: 19 }
+Function:        minus
+Args:
+  - String:          'load of type '
+  - Type:            double
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: main_save.c, Line: 36, Column: 18 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: main_save.c, Line: 36, Column: 27 }
+Function:        minus
+Args:
+  - String:          'load of type '
+  - Type:            double
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: main_save.c, Line: 36, Column: 18 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: main_save.c, Line: 36, Column: 19 }
+Function:        minus
+Args:
+  - String:          'load of type '
+  - Type:            double
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: main_save.c, Line: 36, Column: 18 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: main_save.c, Line: 36, Column: 27 }
+Function:        minus
+Args:
+  - String:          'load of type '
+  - Type:            double
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: main_save.c, Line: 36, Column: 18 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: main_save.c, Line: 36, Column: 19 }
+Function:        minus
+Args:
+  - String:          'load of type '
+  - Type:            double
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: main_save.c, Line: 36, Column: 18 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: main_save.c, Line: 36, Column: 27 }
+Function:        minus
+Args:
+  - String:          'load of type '
+  - Type:            double
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: main_save.c, Line: 36, Column: 18 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: main_save.c, Line: 36, Column: 19 }
+Function:        minus
+Args:
+  - String:          'load of type '
+  - Type:            double
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: main_save.c, Line: 36, Column: 18 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: main_save.c, Line: 36, Column: 27 }
+Function:        minus
+Args:
+  - String:          'load of type '
+  - Type:            double
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: main_save.c, Line: 36, Column: 18 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: main_save.c, Line: 36, Column: 19 }
+Function:        minus
+Args:
+  - String:          'load of type '
+  - Type:            double
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: main_save.c, Line: 36, Column: 18 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: main_save.c, Line: 36, Column: 27 }
+Function:        minus
+Args:
+  - String:          'load of type '
+  - Type:            double
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: main_save.c, Line: 36, Column: 18 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: main_save.c, Line: 36, Column: 19 }
+Function:        minus
+Args:
+  - String:          'load of type '
+  - Type:            double
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: main_save.c, Line: 36, Column: 18 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: main_save.c, Line: 36, Column: 27 }
+Function:        minus
+Args:
+  - String:          'load of type '
+  - Type:            double
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: main_save.c, Line: 36, Column: 18 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: main_save.c, Line: 36, Column: 19 }
+Function:        minus
+Args:
+  - String:          'load of type '
+  - Type:            double
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: main_save.c, Line: 36, Column: 18 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: main_save.c, Line: 36, Column: 27 }
+Function:        minus
+Args:
+  - String:          'load of type '
+  - Type:            double
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: main_save.c, Line: 36, Column: 18 }
+...
+--- !Passed
+Pass:            loop-unroll
+Name:            FullyUnrolled
+DebugLoc:        { File: main_save.c, Line: 43, Column: 5 }
+Function:        add
+Args:
+  - String:          'completely unrolled loop with '
+  - UnrollCount:     '8'
+  - String:          ' iterations'
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: main_save.c, Line: 45, Column: 17 }
+Function:        add
+Args:
+  - String:          'load of type '
+  - Type:            double
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: main_save.c, Line: 45, Column: 16 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: main_save.c, Line: 45, Column: 25 }
+Function:        add
+Args:
+  - String:          'load of type '
+  - Type:            double
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: main_save.c, Line: 45, Column: 16 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: main_save.c, Line: 45, Column: 17 }
+Function:        add
+Args:
+  - String:          'load of type '
+  - Type:            double
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: main_save.c, Line: 45, Column: 16 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: main_save.c, Line: 45, Column: 25 }
+Function:        add
+Args:
+  - String:          'load of type '
+  - Type:            double
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: main_save.c, Line: 45, Column: 16 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: main_save.c, Line: 45, Column: 17 }
+Function:        add
+Args:
+  - String:          'load of type '
+  - Type:            double
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: main_save.c, Line: 45, Column: 16 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: main_save.c, Line: 45, Column: 25 }
+Function:        add
+Args:
+  - String:          'load of type '
+  - Type:            double
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: main_save.c, Line: 45, Column: 16 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: main_save.c, Line: 45, Column: 17 }
+Function:        add
+Args:
+  - String:          'load of type '
+  - Type:            double
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: main_save.c, Line: 45, Column: 16 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: main_save.c, Line: 45, Column: 25 }
+Function:        add
+Args:
+  - String:          'load of type '
+  - Type:            double
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: main_save.c, Line: 45, Column: 16 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: main_save.c, Line: 45, Column: 17 }
+Function:        add
+Args:
+  - String:          'load of type '
+  - Type:            double
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: main_save.c, Line: 45, Column: 16 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: main_save.c, Line: 45, Column: 25 }
+Function:        add
+Args:
+  - String:          'load of type '
+  - Type:            double
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: main_save.c, Line: 45, Column: 16 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: main_save.c, Line: 45, Column: 17 }
+Function:        add
+Args:
+  - String:          'load of type '
+  - Type:            double
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: main_save.c, Line: 45, Column: 16 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: main_save.c, Line: 45, Column: 25 }
+Function:        add
+Args:
+  - String:          'load of type '
+  - Type:            double
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: main_save.c, Line: 45, Column: 16 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: main_save.c, Line: 45, Column: 17 }
+Function:        add
+Args:
+  - String:          'load of type '
+  - Type:            double
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: main_save.c, Line: 45, Column: 16 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: main_save.c, Line: 45, Column: 25 }
+Function:        add
+Args:
+  - String:          'load of type '
+  - Type:            double
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: main_save.c, Line: 45, Column: 16 }
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: main_save.c, Line: 52, Column: 5 }
+Function:        mbrot8
+Args:
+  - String:          ''''
+  - Callee:          fill
+    DebugLoc:        { File: main_save.c, Line: 16, Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          mbrot8
+    DebugLoc:        { File: main_save.c, Line: 50, Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-40'
+  - String:          ', threshold='
+  - Threshold:       '375'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          mbrot8
+  - String:          ':'
+  - Line:            '3'
+  - String:          ':'
+  - Column:          '5'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: main_save.c, Line: 53, Column: 5 }
+Function:        mbrot8
+Args:
+  - String:          ''''
+  - Callee:          fill
+    DebugLoc:        { File: main_save.c, Line: 16, Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          mbrot8
+    DebugLoc:        { File: main_save.c, Line: 50, Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-40'
+  - String:          ', threshold='
+  - Threshold:       '375'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          mbrot8
+  - String:          ':'
+  - Line:            '4'
+  - String:          ':'
+  - Column:          '5'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: main_save.c, Line: 54, Column: 5 }
+Function:        mbrot8
+Args:
+  - String:          ''''
+  - Callee:          fill
+    DebugLoc:        { File: main_save.c, Line: 16, Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          mbrot8
+    DebugLoc:        { File: main_save.c, Line: 50, Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-40'
+  - String:          ', threshold='
+  - Threshold:       '375'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          mbrot8
+  - String:          ':'
+  - Line:            '5'
+  - String:          ':'
+  - Column:          '5'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: main_save.c, Line: 55, Column: 5 }
+Function:        mbrot8
+Args:
+  - String:          ''''
+  - Callee:          fill
+    DebugLoc:        { File: main_save.c, Line: 16, Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          mbrot8
+    DebugLoc:        { File: main_save.c, Line: 50, Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-40'
+  - String:          ', threshold='
+  - Threshold:       '375'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          mbrot8
+  - String:          ':'
+  - Line:            '6'
+  - String:          ':'
+  - Column:          '5'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: main_save.c, Line: 56, Column: 5 }
+Function:        mbrot8
+Args:
+  - String:          ''''
+  - Callee:          fill
+    DebugLoc:        { File: main_save.c, Line: 16, Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          mbrot8
+    DebugLoc:        { File: main_save.c, Line: 50, Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-40'
+  - String:          ', threshold='
+  - Threshold:       '375'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          mbrot8
+  - String:          ':'
+  - Line:            '7'
+  - String:          ':'
+  - Column:          '5'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: main_save.c, Line: 57, Column: 5 }
+Function:        mbrot8
+Args:
+  - String:          ''''
+  - Callee:          fill
+    DebugLoc:        { File: main_save.c, Line: 16, Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          mbrot8
+    DebugLoc:        { File: main_save.c, Line: 50, Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-40'
+  - String:          ', threshold='
+  - Threshold:       '375'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          mbrot8
+  - String:          ':'
+  - Line:            '8'
+  - String:          ':'
+  - Column:          '5'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: main_save.c, Line: 74, Column: 8 }
+Function:        mbrot8
+Args:
+  - String:          ''''
+  - Callee:          add
+    DebugLoc:        { File: main_save.c, Line: 42, Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          mbrot8
+    DebugLoc:        { File: main_save.c, Line: 50, Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-5'
+  - String:          ', threshold='
+  - Threshold:       '375'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          mbrot8
+  - String:          ':'
+  - Line:            '25'
+  - String:          ':'
+  - Column:          '8'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: main_save.c, Line: 64, Column: 12 }
+Function:        mbrot8
+Args:
+  - String:          ''''
+  - Callee:          add
+    DebugLoc:        { File: main_save.c, Line: 42, Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          mbrot8
+    DebugLoc:        { File: main_save.c, Line: 50, Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-5'
+  - String:          ', threshold='
+  - Threshold:       '375'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          mbrot8
+  - String:          ':'
+  - Line:            '15'
+  - String:          ':'
+  - Column:          '12'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: main_save.c, Line: 65, Column: 6 }
+Function:        mbrot8
+Args:
+  - String:          ''''
+  - Callee:          mul
+    DebugLoc:        { File: main_save.c, Line: 25, Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          mbrot8
+    DebugLoc:        { File: main_save.c, Line: 50, Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-5'
+  - String:          ', threshold='
+  - Threshold:       '375'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          mbrot8
+  - String:          ':'
+  - Line:            '16'
+  - String:          ':'
+  - Column:          '6'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: main_save.c, Line: 66, Column: 6 }
+Function:        mbrot8
+Args:
+  - String:          ''''
+  - Callee:          add
+    DebugLoc:        { File: main_save.c, Line: 42, Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          mbrot8
+    DebugLoc:        { File: main_save.c, Line: 50, Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-5'
+  - String:          ', threshold='
+  - Threshold:       '375'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          mbrot8
+  - String:          ':'
+  - Line:            '17'
+  - String:          ':'
+  - Column:          '6'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: main_save.c, Line: 68, Column: 6 }
+Function:        mbrot8
+Args:
+  - String:          ''''
+  - Callee:          minus
+    DebugLoc:        { File: main_save.c, Line: 33, Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          mbrot8
+    DebugLoc:        { File: main_save.c, Line: 50, Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-5'
+  - String:          ', threshold='
+  - Threshold:       '375'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          mbrot8
+  - String:          ':'
+  - Line:            '19'
+  - String:          ':'
+  - Column:          '6'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: main_save.c, Line: 69, Column: 12 }
+Function:        mbrot8
+Args:
+  - String:          ''''
+  - Callee:          add
+    DebugLoc:        { File: main_save.c, Line: 42, Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          mbrot8
+    DebugLoc:        { File: main_save.c, Line: 50, Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '35'
+  - String:          ', threshold='
+  - Threshold:       '375'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          mbrot8
+  - String:          ':'
+  - Line:            '20'
+  - String:          ':'
+  - Column:          '12'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: main_save.c, Line: 70, Column: 12 }
+Function:        mbrot8
+Args:
+  - String:          ''''
+  - Callee:          mul
+    DebugLoc:        { File: main_save.c, Line: 25, Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          mbrot8
+    DebugLoc:        { File: main_save.c, Line: 50, Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-5'
+  - String:          ', threshold='
+  - Threshold:       '375'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          mbrot8
+  - String:          ':'
+  - Line:            '21'
+  - String:          ':'
+  - Column:          '12'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: main_save.c, Line: 71, Column: 6 }
+Function:        mbrot8
+Args:
+  - String:          ''''
+  - Callee:          mul
+    DebugLoc:        { File: main_save.c, Line: 25, Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          mbrot8
+    DebugLoc:        { File: main_save.c, Line: 50, Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-5'
+  - String:          ', threshold='
+  - Threshold:       '375'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          mbrot8
+  - String:          ':'
+  - Line:            '22'
+  - String:          ':'
+  - Column:          '6'
+  - String:          ';'
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: main_save.c, Line: 45, Column: 25 }
+Function:        mbrot8
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: main_save.c, Line: 45, Column: 25 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: main_save.c, Line: 45, Column: 25 }
+Function:        mbrot8
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+    DebugLoc:        { File: main_save.c, Line: 45, Column: 25 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: main_save.c, Line: 45, Column: 25 }
+Function:        mbrot8
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: main_save.c, Line: 45, Column: 25 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: main_save.c, Line: 45, Column: 25 }
+Function:        mbrot8
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+    DebugLoc:        { File: main_save.c, Line: 45, Column: 25 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: main_save.c, Line: 45, Column: 25 }
+Function:        mbrot8
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: main_save.c, Line: 45, Column: 25 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: main_save.c, Line: 45, Column: 25 }
+Function:        mbrot8
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+    DebugLoc:        { File: main_save.c, Line: 45, Column: 25 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: main_save.c, Line: 45, Column: 25 }
+Function:        mbrot8
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: main_save.c, Line: 45, Column: 25 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: main_save.c, Line: 45, Column: 25 }
+Function:        mbrot8
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+    DebugLoc:        { File: main_save.c, Line: 45, Column: 25 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: main_save.c, Line: 45, Column: 25 }
+Function:        mbrot8
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: main_save.c, Line: 45, Column: 25 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: main_save.c, Line: 45, Column: 25 }
+Function:        mbrot8
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+    DebugLoc:        { File: main_save.c, Line: 45, Column: 25 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: main_save.c, Line: 45, Column: 25 }
+Function:        mbrot8
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: main_save.c, Line: 45, Column: 25 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: main_save.c, Line: 45, Column: 25 }
+Function:        mbrot8
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+    DebugLoc:        { File: main_save.c, Line: 45, Column: 25 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: main_save.c, Line: 45, Column: 25 }
+Function:        mbrot8
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: main_save.c, Line: 45, Column: 25 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: main_save.c, Line: 45, Column: 25 }
+Function:        mbrot8
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+    DebugLoc:        { File: main_save.c, Line: 45, Column: 25 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: main_save.c, Line: 45, Column: 25 }
+Function:        mbrot8
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: main_save.c, Line: 45, Column: 25 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+Function:        mbrot8
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+Function:        mbrot8
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+Function:        mbrot8
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+Function:        mbrot8
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+Function:        mbrot8
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+Function:        mbrot8
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+Function:        mbrot8
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+Function:        mbrot8
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+Function:        mbrot8
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+Function:        mbrot8
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+Function:        mbrot8
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+Function:        mbrot8
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+Function:        mbrot8
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+Function:        mbrot8
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+Function:        mbrot8
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+...
+--- !Passed
+Pass:            loop-unroll
+Name:            FullyUnrolled
+DebugLoc:        { File: main_save.c, Line: 62, Column: 8 }
+Function:        mbrot8
+Args:
+  - String:          'completely unrolled loop with '
+  - UnrollCount:     '5'
+  - String:          ' iterations'
+...
+--- !Passed
+Pass:            loop-unroll
+Name:            FullyUnrolled
+DebugLoc:        { File: main_save.c, Line: 76, Column: 8 }
+Function:        mbrot8
+Args:
+  - String:          'completely unrolled loop with '
+  - UnrollCount:     '8'
+  - String:          ' iterations'
+...
+--- !Passed
+Pass:            loop-unroll
+Name:            FullyUnrolled
+DebugLoc:        { File: main_save.c, Line: 92, Column: 5 }
+Function:        mbrot8
+Args:
+  - String:          'completely unrolled loop with '
+  - UnrollCount:     '8'
+  - String:          ' iterations'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: main_save.c, Line: 119, Column: 22 }
+Function:        main
+Args:
+  - Callee:          malloc
+    DebugLoc:        { File: '/usr/include/stdlib.h', Line: 0, Column: 0 }
+  - String:          ' will not be inlined into '
+  - Caller:          main
+    DebugLoc:        { File: main_save.c, Line: 113, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: main_save.c, Line: 129, Column: 5 }
+Function:        main
+Args:
+  - Callee:          printf
+    DebugLoc:        { File: '/usr/include/stdio.h', Line: 0, Column: 0 }
+  - String:          ' will not be inlined into '
+  - Caller:          main
+    DebugLoc:        { File: main_save.c, Line: 113, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: main_save.c, Line: 131, Column: 45 }
+Function:        main
+Args:
+  - Callee:          malloc
+    DebugLoc:        { File: '/usr/include/stdlib.h', Line: 0, Column: 0 }
+  - String:          ' will not be inlined into '
+  - Caller:          main
+    DebugLoc:        { File: main_save.c, Line: 113, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: main_save.c, Line: 148, Column: 8 }
+Function:        main
+Args:
+  - Callee:          putchar
+  - String:          ' will not be inlined into '
+  - Caller:          main
+    DebugLoc:        { File: main_save.c, Line: 113, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: main_save.c, Line: 149, Column: 29 }
+Function:        main
+Args:
+  - Callee:          MD5
+    DebugLoc:        { File: '/usr/include/openssl/md5.h', Line: 0, Column: 0 }
+  - String:          ' will not be inlined into '
+  - Caller:          main
+    DebugLoc:        { File: main_save.c, Line: 113, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: main_save.c, Line: 154, Column: 5 }
+Function:        main
+Args:
+  - Callee:          putchar
+  - String:          ' will not be inlined into '
+  - Caller:          main
+    DebugLoc:        { File: main_save.c, Line: 113, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: main_save.c, Line: 152, Column: 6 }
+Function:        main
+Args:
+  - Callee:          printf
+    DebugLoc:        { File: '/usr/include/stdio.h', Line: 0, Column: 0 }
+  - String:          ' will not be inlined into '
+  - Caller:          main
+    DebugLoc:        { File: main_save.c, Line: 113, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: main_save.c, Line: 114, Column: 26 }
+Function:        main
+Args:
+  - String:          ''''
+  - Callee:          atoi
+    DebugLoc:        { File: '/usr/include/stdlib.h', Line: 482, Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          main
+    DebugLoc:        { File: main_save.c, Line: 113, Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '10'
+  - String:          ', threshold='
+  - Threshold:       '487'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          main
+  - String:          ':'
+  - Line:            '2'
+  - String:          ':'
+  - Column:          '26'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: main_save.c, Line: 126, Column: 26 }
+Function:        main
+Args:
+  - String:          ''''
+  - Callee:          init_xloc
+    DebugLoc:        { File: main_save.c, Line: 106, Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          main
+    DebugLoc:        { File: main_save.c, Line: 113, Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-30'
+  - String:          ', threshold='
+  - Threshold:       '787'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          main
+  - String:          ':'
+  - Line:            '14'
+  - String:          ':'
+  - Column:          '26'
+  - String:          ';'
+...
+--- !Missed
+Pass:            inline
+Name:            TooCostly
+DebugLoc:        { File: main_save.c, Line: 139, Column: 36 }
+Function:        main
+Args:
+  - String:          ''''
+  - Callee:          mbrot8
+    DebugLoc:        { File: main_save.c, Line: 50, Column: 0 }
+  - String:          ''' not inlined into '''
+  - Caller:          main
+    DebugLoc:        { File: main_save.c, Line: 113, Column: 0 }
+  - String:          ''' because too costly to inline '
+  - String:          '(cost='
+  - Cost:            '1520'
+  - String:          ', threshold='
+  - Threshold:       '525'
+  - String:          ')'
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: main_save.c, Line: 126, Column: 13 }
+Function:        main
+Args:
+  - String:          'hoisting '
+  - Inst:            zext
+    DebugLoc:        { File: main_save.c, Line: 126, Column: 13 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: main_save.c, Line: 126, Column: 13 }
+Function:        main
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+    DebugLoc:        { File: main_save.c, Line: 126, Column: 13 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: main_save.c, Line: 139, Column: 21 }
+Function:        main
+Args:
+  - String:          'hoisting '
+  - Inst:            mul
+    DebugLoc:        { File: main_save.c, Line: 139, Column: 21 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: main_save.c, Line: 137, Column: 22 }
+Function:        main
+Args:
+  - String:          'hoisting '
+  - Inst:            icmp
+    DebugLoc:        { File: main_save.c, Line: 137, Column: 22 }
+...
+--- !Passed
+Pass:            loop-unroll
+Name:            FullyUnrolled
+DebugLoc:        { File: main_save.c, Line: 124, Column: 9 }
+Function:        main
+Args:
+  - String:          'completely unrolled loop with '
+  - UnrollCount:     '8'
+  - String:          ' iterations'
+...
+--- !Passed
+Pass:            loop-delete
+Name:            NeverExecutes
+DebugLoc:        { File: main_save.c, Line: 134, Column: 5 }
+Function:        main
+Args:
+  - String:          Loop deleted because it never executes
+...
+--- !Passed
+Pass:            TTI
+Name:            DontUnroll
+DebugLoc:        { File: main_save.c, Line: 137, Column: 9 }
+Function:        main
+Args:
+  - String:          'advising against unrolling the loop because it contains a '
+  - Call:            call
+    DebugLoc:        { File: main_save.c, Line: 139, Column: 36 }
+...
+--- !Passed
+Pass:            TTI
+Name:            DontUnroll
+DebugLoc:        { File: main_save.c, Line: 134, Column: 5 }
+Function:        main
+Args:
+  - String:          'advising against unrolling the loop because it contains a '
+  - Call:            call
+    DebugLoc:        { File: main_save.c, Line: 139, Column: 36 }
+...
+--- !Passed
+Pass:            TTI
+Name:            DontUnroll
+DebugLoc:        { File: main_save.c, Line: 150, Column: 5 }
+Function:        main
+Args:
+  - String:          'advising against unrolling the loop because it contains a '
+  - Call:            call
+    DebugLoc:        { File: main_save.c, Line: 152, Column: 6 }
+...
+--- !Passed
+Pass:            loop-unroll
+Name:            FullyUnrolled
+DebugLoc:        { File: main_save.c, Line: 150, Column: 5 }
+Function:        main
+Args:
+  - String:          'completely unrolled loop with '
+  - UnrollCount:     '16'
+  - String:          ' iterations'
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: main_save.c, Line: 152, Column: 36 }
+Function:        main
+Args:
+  - String:          'load of type '
+  - Type:            i8
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: main_save.c, Line: 149, Column: 29 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: main_save.c, Line: 152, Column: 36 }
+Function:        main
+Args:
+  - String:          'load of type '
+  - Type:            i8
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: main_save.c, Line: 152, Column: 6 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: main_save.c, Line: 152, Column: 36 }
+Function:        main
+Args:
+  - String:          'load of type '
+  - Type:            i8
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: main_save.c, Line: 152, Column: 6 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: main_save.c, Line: 152, Column: 36 }
+Function:        main
+Args:
+  - String:          'load of type '
+  - Type:            i8
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: main_save.c, Line: 152, Column: 6 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: main_save.c, Line: 152, Column: 36 }
+Function:        main
+Args:
+  - String:          'load of type '
+  - Type:            i8
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: main_save.c, Line: 152, Column: 6 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: main_save.c, Line: 152, Column: 36 }
+Function:        main
+Args:
+  - String:          'load of type '
+  - Type:            i8
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: main_save.c, Line: 152, Column: 6 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: main_save.c, Line: 152, Column: 36 }
+Function:        main
+Args:
+  - String:          'load of type '
+  - Type:            i8
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: main_save.c, Line: 152, Column: 6 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: main_save.c, Line: 152, Column: 36 }
+Function:        main
+Args:
+  - String:          'load of type '
+  - Type:            i8
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: main_save.c, Line: 152, Column: 6 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: main_save.c, Line: 152, Column: 36 }
+Function:        main
+Args:
+  - String:          'load of type '
+  - Type:            i8
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: main_save.c, Line: 152, Column: 6 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: main_save.c, Line: 152, Column: 36 }
+Function:        main
+Args:
+  - String:          'load of type '
+  - Type:            i8
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: main_save.c, Line: 152, Column: 6 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: main_save.c, Line: 152, Column: 36 }
+Function:        main
+Args:
+  - String:          'load of type '
+  - Type:            i8
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: main_save.c, Line: 152, Column: 6 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: main_save.c, Line: 152, Column: 36 }
+Function:        main
+Args:
+  - String:          'load of type '
+  - Type:            i8
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: main_save.c, Line: 152, Column: 6 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: main_save.c, Line: 152, Column: 36 }
+Function:        main
+Args:
+  - String:          'load of type '
+  - Type:            i8
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: main_save.c, Line: 152, Column: 6 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: main_save.c, Line: 152, Column: 36 }
+Function:        main
+Args:
+  - String:          'load of type '
+  - Type:            i8
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: main_save.c, Line: 152, Column: 6 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: main_save.c, Line: 152, Column: 36 }
+Function:        main
+Args:
+  - String:          'load of type '
+  - Type:            i8
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: main_save.c, Line: 152, Column: 6 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: main_save.c, Line: 152, Column: 36 }
+Function:        main
+Args:
+  - String:          'load of type '
+  - Type:            i8
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: main_save.c, Line: 152, Column: 6 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: main_save.c, Line: 152, Column: 36 }
+Function:        main
+Args:
+  - String:          'load of type '
+  - Type:            i8
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: main_save.c, Line: 149, Column: 29 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: main_save.c, Line: 152, Column: 36 }
+Function:        main
+Args:
+  - String:          'load of type '
+  - Type:            i8
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: main_save.c, Line: 152, Column: 6 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: main_save.c, Line: 152, Column: 36 }
+Function:        main
+Args:
+  - String:          'load of type '
+  - Type:            i8
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: main_save.c, Line: 152, Column: 6 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: main_save.c, Line: 152, Column: 36 }
+Function:        main
+Args:
+  - String:          'load of type '
+  - Type:            i8
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: main_save.c, Line: 152, Column: 6 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: main_save.c, Line: 152, Column: 36 }
+Function:        main
+Args:
+  - String:          'load of type '
+  - Type:            i8
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: main_save.c, Line: 152, Column: 6 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: main_save.c, Line: 152, Column: 36 }
+Function:        main
+Args:
+  - String:          'load of type '
+  - Type:            i8
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: main_save.c, Line: 152, Column: 6 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: main_save.c, Line: 152, Column: 36 }
+Function:        main
+Args:
+  - String:          'load of type '
+  - Type:            i8
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: main_save.c, Line: 152, Column: 6 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: main_save.c, Line: 152, Column: 36 }
+Function:        main
+Args:
+  - String:          'load of type '
+  - Type:            i8
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: main_save.c, Line: 152, Column: 6 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: main_save.c, Line: 152, Column: 36 }
+Function:        main
+Args:
+  - String:          'load of type '
+  - Type:            i8
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: main_save.c, Line: 152, Column: 6 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: main_save.c, Line: 152, Column: 36 }
+Function:        main
+Args:
+  - String:          'load of type '
+  - Type:            i8
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: main_save.c, Line: 152, Column: 6 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: main_save.c, Line: 152, Column: 36 }
+Function:        main
+Args:
+  - String:          'load of type '
+  - Type:            i8
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: main_save.c, Line: 152, Column: 6 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: main_save.c, Line: 152, Column: 36 }
+Function:        main
+Args:
+  - String:          'load of type '
+  - Type:            i8
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: main_save.c, Line: 152, Column: 6 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: main_save.c, Line: 152, Column: 36 }
+Function:        main
+Args:
+  - String:          'load of type '
+  - Type:            i8
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: main_save.c, Line: 152, Column: 6 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: main_save.c, Line: 152, Column: 36 }
+Function:        main
+Args:
+  - String:          'load of type '
+  - Type:            i8
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: main_save.c, Line: 152, Column: 6 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: main_save.c, Line: 152, Column: 36 }
+Function:        main
+Args:
+  - String:          'load of type '
+  - Type:            i8
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: main_save.c, Line: 152, Column: 6 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: main_save.c, Line: 152, Column: 36 }
+Function:        main
+Args:
+  - String:          'load of type '
+  - Type:            i8
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: main_save.c, Line: 152, Column: 6 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: main_save.c, Line: 137, Column: 22 }
+Function:        main
+Args:
+  - String:          'hoisting '
+  - Inst:            zext
+    DebugLoc:        { File: main_save.c, Line: 137, Column: 22 }
+...
+--- !Passed
+Pass:            slp-vectorizer
+Name:            StoresVectorized
+DebugLoc:        { File: main_save.c, Line: 19, Column: 17 }
+Function:        fill
+Args:
+  - String:          'Stores SLP vectorized with cost '
+  - Cost:            '-2'
+  - String:          ' and with tree size '
+  - TreeSize:        '2'
+...
+--- !Passed
+Pass:            slp-vectorizer
+Name:            StoresVectorized
+DebugLoc:        { File: main_save.c, Line: 19, Column: 17 }
+Function:        fill
+Args:
+  - String:          'Stores SLP vectorized with cost '
+  - Cost:            '-2'
+  - String:          ' and with tree size '
+  - TreeSize:        '2'
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: main_save.c, Line: 28, Column: 19 }
+Function:        mul
+Args:
+  - String:          'load of type '
+  - Type:            double
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: main_save.c, Line: 28, Column: 18 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: main_save.c, Line: 28, Column: 27 }
+Function:        mul
+Args:
+  - String:          'load of type '
+  - Type:            double
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: main_save.c, Line: 28, Column: 18 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: main_save.c, Line: 28, Column: 19 }
+Function:        mul
+Args:
+  - String:          'load of type '
+  - Type:            double
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: main_save.c, Line: 28, Column: 18 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: main_save.c, Line: 28, Column: 27 }
+Function:        mul
+Args:
+  - String:          'load of type '
+  - Type:            double
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: main_save.c, Line: 28, Column: 18 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: main_save.c, Line: 28, Column: 19 }
+Function:        mul
+Args:
+  - String:          'load of type '
+  - Type:            double
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: main_save.c, Line: 28, Column: 18 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: main_save.c, Line: 28, Column: 27 }
+Function:        mul
+Args:
+  - String:          'load of type '
+  - Type:            double
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: main_save.c, Line: 28, Column: 18 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: main_save.c, Line: 28, Column: 19 }
+Function:        mul
+Args:
+  - String:          'load of type '
+  - Type:            double
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: main_save.c, Line: 28, Column: 18 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: main_save.c, Line: 28, Column: 27 }
+Function:        mul
+Args:
+  - String:          'load of type '
+  - Type:            double
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: main_save.c, Line: 28, Column: 18 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: main_save.c, Line: 28, Column: 19 }
+Function:        mul
+Args:
+  - String:          'load of type '
+  - Type:            double
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: main_save.c, Line: 28, Column: 18 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: main_save.c, Line: 28, Column: 27 }
+Function:        mul
+Args:
+  - String:          'load of type '
+  - Type:            double
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: main_save.c, Line: 28, Column: 18 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: main_save.c, Line: 28, Column: 19 }
+Function:        mul
+Args:
+  - String:          'load of type '
+  - Type:            double
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: main_save.c, Line: 28, Column: 18 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: main_save.c, Line: 28, Column: 27 }
+Function:        mul
+Args:
+  - String:          'load of type '
+  - Type:            double
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: main_save.c, Line: 28, Column: 18 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: main_save.c, Line: 28, Column: 19 }
+Function:        mul
+Args:
+  - String:          'load of type '
+  - Type:            double
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: main_save.c, Line: 28, Column: 18 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: main_save.c, Line: 28, Column: 27 }
+Function:        mul
+Args:
+  - String:          'load of type '
+  - Type:            double
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: main_save.c, Line: 28, Column: 18 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: main_save.c, Line: 36, Column: 19 }
+Function:        minus
+Args:
+  - String:          'load of type '
+  - Type:            double
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: main_save.c, Line: 36, Column: 18 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: main_save.c, Line: 36, Column: 27 }
+Function:        minus
+Args:
+  - String:          'load of type '
+  - Type:            double
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: main_save.c, Line: 36, Column: 18 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: main_save.c, Line: 36, Column: 19 }
+Function:        minus
+Args:
+  - String:          'load of type '
+  - Type:            double
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: main_save.c, Line: 36, Column: 18 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: main_save.c, Line: 36, Column: 27 }
+Function:        minus
+Args:
+  - String:          'load of type '
+  - Type:            double
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: main_save.c, Line: 36, Column: 18 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: main_save.c, Line: 36, Column: 19 }
+Function:        minus
+Args:
+  - String:          'load of type '
+  - Type:            double
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: main_save.c, Line: 36, Column: 18 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: main_save.c, Line: 36, Column: 27 }
+Function:        minus
+Args:
+  - String:          'load of type '
+  - Type:            double
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: main_save.c, Line: 36, Column: 18 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: main_save.c, Line: 36, Column: 19 }
+Function:        minus
+Args:
+  - String:          'load of type '
+  - Type:            double
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: main_save.c, Line: 36, Column: 18 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: main_save.c, Line: 36, Column: 27 }
+Function:        minus
+Args:
+  - String:          'load of type '
+  - Type:            double
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: main_save.c, Line: 36, Column: 18 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: main_save.c, Line: 36, Column: 19 }
+Function:        minus
+Args:
+  - String:          'load of type '
+  - Type:            double
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: main_save.c, Line: 36, Column: 18 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: main_save.c, Line: 36, Column: 27 }
+Function:        minus
+Args:
+  - String:          'load of type '
+  - Type:            double
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: main_save.c, Line: 36, Column: 18 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: main_save.c, Line: 36, Column: 19 }
+Function:        minus
+Args:
+  - String:          'load of type '
+  - Type:            double
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: main_save.c, Line: 36, Column: 18 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: main_save.c, Line: 36, Column: 27 }
+Function:        minus
+Args:
+  - String:          'load of type '
+  - Type:            double
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: main_save.c, Line: 36, Column: 18 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: main_save.c, Line: 36, Column: 19 }
+Function:        minus
+Args:
+  - String:          'load of type '
+  - Type:            double
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: main_save.c, Line: 36, Column: 18 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: main_save.c, Line: 36, Column: 27 }
+Function:        minus
+Args:
+  - String:          'load of type '
+  - Type:            double
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: main_save.c, Line: 36, Column: 18 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: main_save.c, Line: 45, Column: 17 }
+Function:        add
+Args:
+  - String:          'load of type '
+  - Type:            double
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: main_save.c, Line: 45, Column: 16 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: main_save.c, Line: 45, Column: 25 }
+Function:        add
+Args:
+  - String:          'load of type '
+  - Type:            double
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: main_save.c, Line: 45, Column: 16 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: main_save.c, Line: 45, Column: 17 }
+Function:        add
+Args:
+  - String:          'load of type '
+  - Type:            double
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: main_save.c, Line: 45, Column: 16 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: main_save.c, Line: 45, Column: 25 }
+Function:        add
+Args:
+  - String:          'load of type '
+  - Type:            double
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: main_save.c, Line: 45, Column: 16 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: main_save.c, Line: 45, Column: 17 }
+Function:        add
+Args:
+  - String:          'load of type '
+  - Type:            double
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: main_save.c, Line: 45, Column: 16 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: main_save.c, Line: 45, Column: 25 }
+Function:        add
+Args:
+  - String:          'load of type '
+  - Type:            double
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: main_save.c, Line: 45, Column: 16 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: main_save.c, Line: 45, Column: 17 }
+Function:        add
+Args:
+  - String:          'load of type '
+  - Type:            double
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: main_save.c, Line: 45, Column: 16 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: main_save.c, Line: 45, Column: 25 }
+Function:        add
+Args:
+  - String:          'load of type '
+  - Type:            double
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: main_save.c, Line: 45, Column: 16 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: main_save.c, Line: 45, Column: 17 }
+Function:        add
+Args:
+  - String:          'load of type '
+  - Type:            double
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: main_save.c, Line: 45, Column: 16 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: main_save.c, Line: 45, Column: 25 }
+Function:        add
+Args:
+  - String:          'load of type '
+  - Type:            double
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: main_save.c, Line: 45, Column: 16 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: main_save.c, Line: 45, Column: 17 }
+Function:        add
+Args:
+  - String:          'load of type '
+  - Type:            double
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: main_save.c, Line: 45, Column: 16 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: main_save.c, Line: 45, Column: 25 }
+Function:        add
+Args:
+  - String:          'load of type '
+  - Type:            double
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: main_save.c, Line: 45, Column: 16 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: main_save.c, Line: 45, Column: 17 }
+Function:        add
+Args:
+  - String:          'load of type '
+  - Type:            double
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: main_save.c, Line: 45, Column: 16 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: main_save.c, Line: 45, Column: 25 }
+Function:        add
+Args:
+  - String:          'load of type '
+  - Type:            double
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: main_save.c, Line: 45, Column: 16 }
+...
+--- !Missed
+Pass:            polly-detect
+Name:            RejectionErrors
+DebugLoc:        { File: main_save.c, Line: 0, Column: 0 }
+Function:        mbrot8
+Args:
+  - String:          The following errors keep this region from being a Scop.
+...
+--- !Missed
+Pass:            polly-detect
+Name:            ReportLoopHasMultipleExits
+DebugLoc:        { File: main_save.c, Line: 60, Column: 5 }
+Function:        mbrot8
+Args:
+  - String:          Loop cannot be handled because it has multiple exits.
+...
+--- !Missed
+Pass:            polly-detect
+Name:            InvalidScopEnd
+DebugLoc:        { File: main_save.c, Line: 103, Column: 1 }
+Function:        mbrot8
+Args:
+  - String:          Invalid Scop candidate ends here.
+...
+--- !Analysis
+Pass:            loop-vectorize
+Name:            NonReductionValueUsedOutsideLoop
+DebugLoc:        { File: main_save.c, Line: 60, Column: 5 }
+Function:        mbrot8
+Args:
+  - String:          'loop not vectorized: '
+  - String:          value that could not be identified as reduction is used outside the loop
+...
+--- !Analysis
+Pass:            loop-vectorize
+Name:            CantComputeNumberOfIterations
+DebugLoc:        { File: main_save.c, Line: 60, Column: 5 }
+Function:        mbrot8
+Args:
+  - String:          'loop not vectorized: '
+  - String:          could not determine number of loop iterations
+...
+--- !Missed
+Pass:            loop-vectorize
+Name:            MissedDetails
+DebugLoc:        { File: main_save.c, Line: 60, Column: 5 }
+Function:        mbrot8
+Args:
+  - String:          loop not vectorized
+...
+--- !Passed
+Pass:            slp-vectorizer
+Name:            VectorizedHorizontalReduction
+DebugLoc:        { File: main_save.c, Line: 94, Column: 12 }
+Function:        mbrot8
+Args:
+  - String:          'Vectorized horizontal reduction with cost '
+  - Cost:            '-32'
+  - String:          ' and with tree size '
+  - TreeSize:        '34'
+...
+--- !Passed
+Pass:            slp-vectorizer
+Name:            VectorizedList
+DebugLoc:        { File: main_save.c, Line: 94, Column: 12 }
+Function:        mbrot8
+Args:
+  - String:          'SLP vectorized with cost '
+  - Cost:            '-8'
+  - String:          ' and with tree size '
+  - TreeSize:        '33'
+...
+--- !Missed
+Pass:            slp-vectorizer
+Name:            NotPossible
+DebugLoc:        { File: main_save.c, Line: 94, Column: 12 }
+Function:        mbrot8
+Args:
+  - String:          'Cannot SLP vectorize list: vectorization was impossible'
+  - String:          ' with available vectorization factors'
+...
+--- !Passed
+Pass:            slp-vectorizer
+Name:            VectorizedList
+Function:        mbrot8
+Args:
+  - String:          'SLP vectorized with cost '
+  - Cost:            '-13'
+  - String:          ' and with tree size '
+  - TreeSize:        '32'
+...
+--- !Missed
+Pass:            slp-vectorizer
+Name:            NotBeneficial
+Function:        mbrot8
+Args:
+  - String:          'List vectorization was possible but not beneficial with cost '
+  - Cost:            '0'
+  - String:          ' >= '
+  - Treshold:        '0'
+...
+--- !Passed
+Pass:            slp-vectorizer
+Name:            VectorizedList
+Function:        mbrot8
+Args:
+  - String:          'SLP vectorized with cost '
+  - Cost:            '-2'
+  - String:          ' and with tree size '
+  - TreeSize:        '9'
+...
+--- !Missed
+Pass:            slp-vectorizer
+Name:            NotBeneficial
+Function:        mbrot8
+Args:
+  - String:          'List vectorization was possible but not beneficial with cost '
+  - Cost:            '0'
+  - String:          ' >= '
+  - Treshold:        '0'
+...
+--- !Missed
+Pass:            slp-vectorizer
+Name:            NotBeneficial
+Function:        mbrot8
+Args:
+  - String:          'List vectorization was possible but not beneficial with cost '
+  - Cost:            '0'
+  - String:          ' >= '
+  - Treshold:        '0'
+...
+--- !Missed
+Pass:            slp-vectorizer
+Name:            NotBeneficial
+Function:        mbrot8
+Args:
+  - String:          'List vectorization was possible but not beneficial with cost '
+  - Cost:            '0'
+  - String:          ' >= '
+  - Treshold:        '0'
+...
+--- !Missed
+Pass:            slp-vectorizer
+Name:            NotBeneficial
+Function:        mbrot8
+Args:
+  - String:          'List vectorization was possible but not beneficial with cost '
+  - Cost:            '0'
+  - String:          ' >= '
+  - Treshold:        '0'
+...
+--- !Missed
+Pass:            slp-vectorizer
+Name:            NotBeneficial
+Function:        mbrot8
+Args:
+  - String:          'List vectorization was possible but not beneficial with cost '
+  - Cost:            '0'
+  - String:          ' >= '
+  - Treshold:        '0'
+...
+--- !Missed
+Pass:            slp-vectorizer
+Name:            NotBeneficial
+Function:        mbrot8
+Args:
+  - String:          'List vectorization was possible but not beneficial with cost '
+  - Cost:            '0'
+  - String:          ' >= '
+  - Treshold:        '0'
+...
+--- !Passed
+Pass:            slp-vectorizer
+Name:            VectorizedHorizontalReduction
+DebugLoc:        { File: main_save.c, Line: 78, Column: 15 }
+Function:        mbrot8
+Args:
+  - String:          'Vectorized horizontal reduction with cost '
+  - Cost:            '-5'
+  - String:          ' and with tree size '
+  - TreeSize:        '1'
+...
+--- !Passed
+Pass:            slp-vectorizer
+Name:            VectorizedList
+DebugLoc:        { File: main_save.c, Line: 45, Column: 24 }
+Function:        mbrot8
+Args:
+  - String:          'SLP vectorized with cost '
+  - Cost:            '-18'
+  - String:          ' and with tree size '
+  - TreeSize:        '31'
+...
+--- !Passed
+Pass:            slp-vectorizer
+Name:            VectorizedList
+DebugLoc:        { File: main_save.c, Line: 45, Column: 24 }
+Function:        mbrot8
+Args:
+  - String:          'SLP vectorized with cost '
+  - Cost:            '-5'
+  - String:          ' and with tree size '
+  - TreeSize:        '5'
+...
+--- !Passed
+Pass:            slp-vectorizer
+Name:            VectorizedList
+DebugLoc:        { File: main_save.c, Line: 36, Column: 26 }
+Function:        mbrot8
+Args:
+  - String:          'SLP vectorized with cost '
+  - Cost:            '-40'
+  - String:          ' and with tree size '
+  - TreeSize:        '25'
+...
+--- !Passed
+Pass:            slp-vectorizer
+Name:            VectorizedList
+DebugLoc:        { File: main_save.c, Line: 36, Column: 26 }
+Function:        mbrot8
+Args:
+  - String:          'SLP vectorized with cost '
+  - Cost:            '-26'
+  - String:          ' and with tree size '
+  - TreeSize:        '9'
+...
+--- !Passed
+Pass:            slp-vectorizer
+Name:            VectorizedList
+DebugLoc:        { File: main_save.c, Line: 28, Column: 26 }
+Function:        mbrot8
+Args:
+  - String:          'SLP vectorized with cost '
+  - Cost:            '-10'
+  - String:          ' and with tree size '
+  - TreeSize:        '3'
+...
+--- !Passed
+Pass:            slp-vectorizer
+Name:            VectorizedList
+DebugLoc:        { File: main_save.c, Line: 36, Column: 26 }
+Function:        mbrot8
+Args:
+  - String:          'SLP vectorized with cost '
+  - Cost:            '-7'
+  - String:          ' and with tree size '
+  - TreeSize:        '10'
+...
+--- !Passed
+Pass:            slp-vectorizer
+Name:            VectorizedList
+DebugLoc:        { File: main_save.c, Line: 36, Column: 26 }
+Function:        mbrot8
+Args:
+  - String:          'SLP vectorized with cost '
+  - Cost:            '-6'
+  - String:          ' and with tree size '
+  - TreeSize:        '10'
+...
+--- !Passed
+Pass:            slp-vectorizer
+Name:            VectorizedList
+DebugLoc:        { File: main_save.c, Line: 28, Column: 26 }
+Function:        mbrot8
+Args:
+  - String:          'SLP vectorized with cost '
+  - Cost:            '-3'
+  - String:          ' and with tree size '
+  - TreeSize:        '3'
+...
+--- !Missed
+Pass:            slp-vectorizer
+Name:            NotPossible
+DebugLoc:        { File: main_save.c, Line: 45, Column: 24 }
+Function:        mbrot8
+Args:
+  - String:          'Cannot SLP vectorize list: vectorization was impossible'
+  - String:          ' with available vectorization factors'
+...
+--- !Missed
+Pass:            slp-vectorizer
+Name:            NotPossible
+DebugLoc:        { File: main_save.c, Line: 45, Column: 24 }
+Function:        mbrot8
+Args:
+  - String:          'Cannot SLP vectorize list: vectorization was impossible'
+  - String:          ' with available vectorization factors'
+...
+--- !Missed
+Pass:            polly-detect
+Name:            RejectionErrors
+DebugLoc:        { File: main_save.c, Line: 0, Column: 0 }
+Function:        main
+Args:
+  - String:          The following errors keep this region from being a Scop.
+...
+--- !Missed
+Pass:            polly-detect
+Name:            FuncCall
+DebugLoc:        { File: main_save.c, Line: 139, Column: 36 }
+Function:        main
+Args:
+  - String:          This function call cannot be handled. Try to inline it.
+...
+--- !Missed
+Pass:            polly-detect
+Name:            InvalidScopEnd
+DebugLoc:        { File: main_save.c, Line: 139, Column: 44 }
+Function:        main
+Args:
+  - String:          Invalid Scop candidate ends here.
+...
+--- !Missed
+Pass:            polly-detect
+Name:            RejectionErrors
+DebugLoc:        { File: main_save.c, Line: 0, Column: 0 }
+Function:        main
+Args:
+  - String:          The following errors keep this region from being a Scop.
+...
+--- !Missed
+Pass:            polly-detect
+Name:            Unprofitable
+DebugLoc:        { File: main_save.c, Line: 0, Column: 0 }
+Function:        main
+Args:
+  - String:          No profitable polyhedral optimization found
+...
+--- !Missed
+Pass:            polly-detect
+Name:            InvalidScopEnd
+DebugLoc:        { File: main_save.c, Line: 126, Column: 25 }
+Function:        main
+Args:
+  - String:          Invalid Scop candidate ends here.
+...
+--- !Missed
+Pass:            polly-detect
+Name:            RejectionErrors
+DebugLoc:        { File: main_save.c, Line: 0, Column: 0 }
+Function:        main
+Args:
+  - String:          The following errors keep this region from being a Scop.
+...
+--- !Missed
+Pass:            polly-detect
+Name:            FuncCall
+DebugLoc:        { File: main_save.c, Line: 139, Column: 36 }
+Function:        main
+Args:
+  - String:          This function call cannot be handled. Try to inline it.
+...
+--- !Missed
+Pass:            polly-detect
+Name:            InvalidScopEnd
+DebugLoc:        { File: main_save.c, Line: 139, Column: 44 }
+Function:        main
+Args:
+  - String:          Invalid Scop candidate ends here.
+...
+--- !Missed
+Pass:            polly-detect
+Name:            RejectionErrors
+DebugLoc:        { File: main_save.c, Line: 0, Column: 0 }
+Function:        main
+Args:
+  - String:          The following errors keep this region from being a Scop.
+...
+--- !Missed
+Pass:            polly-detect
+Name:            LoopBound
+DebugLoc:        { File: main_save.c, Line: 121, Column: 5 }
+Function:        main
+Args:
+  - String:          Failed to derive an affine function from the loop bounds.
+...
+--- !Missed
+Pass:            polly-detect
+Name:            InvalidScopEnd
+DebugLoc:        { File: main_save.c, Line: 126, Column: 25 }
+Function:        main
+Args:
+  - String:          Invalid Scop candidate ends here.
+...
+--- !Missed
+Pass:            polly-detect
+Name:            RejectionErrors
+DebugLoc:        { File: main_save.c, Line: 0, Column: 0 }
+Function:        main
+Args:
+  - String:          The following errors keep this region from being a Scop.
+...
+--- !Missed
+Pass:            polly-detect
+Name:            FuncCall
+DebugLoc:        { File: main_save.c, Line: 129, Column: 5 }
+Function:        main
+Args:
+  - String:          This function call cannot be handled. Try to inline it.
+...
+--- !Missed
+Pass:            polly-detect
+Name:            InvalidScopEnd
+DebugLoc:        { File: main_save.c, Line: 139, Column: 44 }
+Function:        main
+Args:
+  - String:          Invalid Scop candidate ends here.
+...
+--- !Missed
+Pass:            polly-detect
+Name:            RejectionErrors
+DebugLoc:        { File: main_save.c, Line: 0, Column: 0 }
+Function:        main
+Args:
+  - String:          The following errors keep this region from being a Scop.
+...
+--- !Missed
+Pass:            polly-detect
+Name:            Unprofitable
+DebugLoc:        { File: main_save.c, Line: 0, Column: 0 }
+Function:        main
+Args:
+  - String:          No profitable polyhedral optimization found
+...
+--- !Missed
+Pass:            polly-detect
+Name:            InvalidScopEnd
+DebugLoc:        { File: '/usr/include/stdlib.h', Line: 483, Column: 16 }
+Function:        main
+Args:
+  - String:          Invalid Scop candidate ends here.
+...
+--- !Passed
+Pass:            TTI
+Name:            DontUnroll
+DebugLoc:        { File: main_save.c, Line: 137, Column: 9 }
+Function:        main
+Args:
+  - String:          'advising against unrolling the loop because it contains a '
+  - Call:            call
+    DebugLoc:        { File: main_save.c, Line: 139, Column: 36 }
+...
+--- !Passed
+Pass:            TTI
+Name:            DontUnroll
+DebugLoc:        { File: main_save.c, Line: 134, Column: 5 }
+Function:        main
+Args:
+  - String:          'advising against unrolling the loop because it contains a '
+  - Call:            call
+    DebugLoc:        { File: main_save.c, Line: 139, Column: 36 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: main_save.c, Line: 152, Column: 36 }
+Function:        main
+Args:
+  - String:          'load of type '
+  - Type:            i8
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: main_save.c, Line: 149, Column: 29 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: main_save.c, Line: 152, Column: 36 }
+Function:        main
+Args:
+  - String:          'load of type '
+  - Type:            i8
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: main_save.c, Line: 152, Column: 6 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: main_save.c, Line: 152, Column: 36 }
+Function:        main
+Args:
+  - String:          'load of type '
+  - Type:            i8
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: main_save.c, Line: 152, Column: 6 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: main_save.c, Line: 152, Column: 36 }
+Function:        main
+Args:
+  - String:          'load of type '
+  - Type:            i8
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: main_save.c, Line: 152, Column: 6 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: main_save.c, Line: 152, Column: 36 }
+Function:        main
+Args:
+  - String:          'load of type '
+  - Type:            i8
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: main_save.c, Line: 152, Column: 6 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: main_save.c, Line: 152, Column: 36 }
+Function:        main
+Args:
+  - String:          'load of type '
+  - Type:            i8
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: main_save.c, Line: 152, Column: 6 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: main_save.c, Line: 152, Column: 36 }
+Function:        main
+Args:
+  - String:          'load of type '
+  - Type:            i8
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: main_save.c, Line: 152, Column: 6 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: main_save.c, Line: 152, Column: 36 }
+Function:        main
+Args:
+  - String:          'load of type '
+  - Type:            i8
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: main_save.c, Line: 152, Column: 6 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: main_save.c, Line: 152, Column: 36 }
+Function:        main
+Args:
+  - String:          'load of type '
+  - Type:            i8
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: main_save.c, Line: 152, Column: 6 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: main_save.c, Line: 152, Column: 36 }
+Function:        main
+Args:
+  - String:          'load of type '
+  - Type:            i8
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: main_save.c, Line: 152, Column: 6 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: main_save.c, Line: 152, Column: 36 }
+Function:        main
+Args:
+  - String:          'load of type '
+  - Type:            i8
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: main_save.c, Line: 152, Column: 6 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: main_save.c, Line: 152, Column: 36 }
+Function:        main
+Args:
+  - String:          'load of type '
+  - Type:            i8
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: main_save.c, Line: 152, Column: 6 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: main_save.c, Line: 152, Column: 36 }
+Function:        main
+Args:
+  - String:          'load of type '
+  - Type:            i8
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: main_save.c, Line: 152, Column: 6 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: main_save.c, Line: 152, Column: 36 }
+Function:        main
+Args:
+  - String:          'load of type '
+  - Type:            i8
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: main_save.c, Line: 152, Column: 6 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: main_save.c, Line: 152, Column: 36 }
+Function:        main
+Args:
+  - String:          'load of type '
+  - Type:            i8
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: main_save.c, Line: 152, Column: 6 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: main_save.c, Line: 152, Column: 36 }
+Function:        main
+Args:
+  - String:          'load of type '
+  - Type:            i8
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: main_save.c, Line: 152, Column: 6 }
+...
+--- !Analysis
+Pass:            loop-vectorize
+Name:            InterleavingNotBeneficial
+DebugLoc:        { File: main_save.c, Line: 121, Column: 5 }
+Function:        main
+Args:
+  - String:          the cost-model indicates that interleaving is not beneficial
+...
+--- !Passed
+Pass:            loop-vectorize
+Name:            Vectorized
+DebugLoc:        { File: main_save.c, Line: 121, Column: 5 }
+Function:        main
+Args:
+  - String:          'vectorized '
+  - String:          ''
+  - String:          'loop (vectorization width: '
+  - VectorizationFactor: '4'
+  - String:          ', interleaved count: '
+  - InterleaveCount: '1'
+  - String:          ')'
+...
+--- !Analysis
+Pass:            loop-vectorize
+Name:            CantVectorizeLibcall
+DebugLoc:        { File: main_save.c, Line: 139, Column: 36 }
+Function:        main
+Args:
+  - String:          'loop not vectorized: '
+  - String:          call instruction cannot be vectorized
+...
+--- !Analysis
+Pass:            loop-vectorize
+Name:            CantVectorizeInstruction
+DebugLoc:        { File: main_save.c, Line: 137, Column: 9 }
+Function:        main
+Args:
+  - String:          'loop not vectorized: '
+  - String:          instruction cannot be vectorized
+...
+--- !Missed
+Pass:            loop-vectorize
+Name:            MissedDetails
+DebugLoc:        { File: main_save.c, Line: 137, Column: 9 }
+Function:        main
+Args:
+  - String:          loop not vectorized
+...
+--- !Passed
+Pass:            slp-vectorizer
+Name:            StoresVectorized
+DebugLoc:        { File: main_save.c, Line: 126, Column: 25 }
+Function:        main
+Args:
+  - String:          'Stores SLP vectorized with cost '
+  - Cost:            '-4'
+  - String:          ' and with tree size '
+  - TreeSize:        '6'
+...
+--- !Passed
+Pass:            slp-vectorizer
+Name:            StoresVectorized
+DebugLoc:        { File: main_save.c, Line: 126, Column: 25 }
+Function:        main
+Args:
+  - String:          'Stores SLP vectorized with cost '
+  - Cost:            '-9'
+  - String:          ' and with tree size '
+  - TreeSize:        '8'
+...
+--- !Missed
+Pass:            slp-vectorizer
+Name:            NotBeneficial
+DebugLoc:        { File: main_save.c, Line: 107, Column: 13 }
+Function:        main
+Args:
+  - String:          'List vectorization was possible but not beneficial with cost '
+  - Cost:            '0'
+  - String:          ' >= '
+  - Treshold:        '0'
+...
+--- !Missed
+Pass:            slp-vectorizer
+Name:            NotBeneficial
+DebugLoc:        { File: main_save.c, Line: 107, Column: 13 }
+Function:        main
+Args:
+  - String:          'List vectorization was possible but not beneficial with cost '
+  - Cost:            '0'
+  - String:          ' >= '
+  - Treshold:        '0'
+...
+--- !Missed
+Pass:            slp-vectorizer
+Name:            NotPossible
+DebugLoc:        { File: main_save.c, Line: 107, Column: 13 }
+Function:        main
+Args:
+  - String:          'Cannot SLP vectorize list: vectorization was impossible'
+  - String:          ' with available vectorization factors'
+...
+--- !Passed
+Pass:            TTI
+Name:            DontUnroll
+DebugLoc:        { File: main_save.c, Line: 137, Column: 9 }
+Function:        main
+Args:
+  - String:          'advising against unrolling the loop because it contains a '
+  - Call:            call
+    DebugLoc:        { File: main_save.c, Line: 139, Column: 36 }
+...
+--- !Passed
+Pass:            TTI
+Name:            DontUnroll
+DebugLoc:        { File: main_save.c, Line: 134, Column: 5 }
+Function:        main
+Args:
+  - String:          'advising against unrolling the loop because it contains a '
+  - Call:            call
+    DebugLoc:        { File: main_save.c, Line: 139, Column: 36 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: main_save.c, Line: 107, Column: 27 }
+Function:        main
+Args:
+  - String:          'hoisting '
+  - Inst:            insertelement
+    DebugLoc:        { File: main_save.c, Line: 107, Column: 27 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: main_save.c, Line: 107, Column: 27 }
+Function:        main
+Args:
+  - String:          'hoisting '
+  - Inst:            shufflevector
+    DebugLoc:        { File: main_save.c, Line: 107, Column: 27 }
+...
+--- !Analysis
+Pass:            prologepilog
+Name:            StackSize
+DebugLoc:        { File: main_save.c, Line: 16, Column: 0 }
+Function:        fill
+Args:
+  - NumStackBytes:   '0'
+  - String:          ' stack bytes in function '''
+  - Function:        fill
+  - String:          ''''
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: main_save.c, Line: 0, Column: 0 }
+Function:        fill
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          'vmovups	'
+  - String:          ': '
+  - INST_vmovups:    '2'
+  - String:          "\n"
+  - String:          ret
+  - String:          ': '
+  - INST_ret:        '1'
+  - String:          "\n"
+  - String:          'vbroadcastsd	'
+  - String:          ': '
+  - INST_vbroadcastsd: '1'
+  - String:          "\n"
+  - String:          vzeroupper
+  - String:          ': '
+  - INST_vzeroupper: '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionCount
+DebugLoc:        { File: main_save.c, Line: 16, Column: 0 }
+Function:        fill
+Args:
+  - NumInstructions: '5'
+  - String:          ' instructions in function'
+...
+--- !Analysis
+Pass:            prologepilog
+Name:            StackSize
+DebugLoc:        { File: main_save.c, Line: 25, Column: 0 }
+Function:        mul
+Args:
+  - NumStackBytes:   '0'
+  - String:          ' stack bytes in function '''
+  - Function:        mul
+  - String:          ''''
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: main_save.c, Line: 0, Column: 0 }
+Function:        mul
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          'vmovsd	'
+  - String:          ': '
+  - INST_vmovsd:     '16'
+  - String:          "\n"
+  - String:          'vmulsd	'
+  - String:          ': '
+  - INST_vmulsd:     '8'
+  - String:          "\n"
+  - String:          ret
+  - String:          ': '
+  - INST_ret:        '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionCount
+DebugLoc:        { File: main_save.c, Line: 25, Column: 0 }
+Function:        mul
+Args:
+  - NumInstructions: '25'
+  - String:          ' instructions in function'
+...
+--- !Analysis
+Pass:            prologepilog
+Name:            StackSize
+DebugLoc:        { File: main_save.c, Line: 33, Column: 0 }
+Function:        minus
+Args:
+  - NumStackBytes:   '0'
+  - String:          ' stack bytes in function '''
+  - Function:        minus
+  - String:          ''''
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: main_save.c, Line: 0, Column: 0 }
+Function:        minus
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          'vmovsd	'
+  - String:          ': '
+  - INST_vmovsd:     '16'
+  - String:          "\n"
+  - String:          'vsubsd	'
+  - String:          ': '
+  - INST_vsubsd:     '8'
+  - String:          "\n"
+  - String:          ret
+  - String:          ': '
+  - INST_ret:        '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionCount
+DebugLoc:        { File: main_save.c, Line: 33, Column: 0 }
+Function:        minus
+Args:
+  - NumInstructions: '25'
+  - String:          ' instructions in function'
+...
+--- !Analysis
+Pass:            prologepilog
+Name:            StackSize
+DebugLoc:        { File: main_save.c, Line: 42, Column: 0 }
+Function:        add
+Args:
+  - NumStackBytes:   '0'
+  - String:          ' stack bytes in function '''
+  - Function:        add
+  - String:          ''''
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: main_save.c, Line: 0, Column: 0 }
+Function:        add
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          'vmovsd	'
+  - String:          ': '
+  - INST_vmovsd:     '16'
+  - String:          "\n"
+  - String:          'vaddsd	'
+  - String:          ': '
+  - INST_vaddsd:     '8'
+  - String:          "\n"
+  - String:          ret
+  - String:          ': '
+  - INST_ret:        '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionCount
+DebugLoc:        { File: main_save.c, Line: 42, Column: 0 }
+Function:        add
+Args:
+  - NumInstructions: '25'
+  - String:          ' instructions in function'
+...
+--- !Missed
+Pass:            regalloc
+Name:            LoopSpillReloadCopies
+DebugLoc:        { File: main_save.c, Line: 60, Column: 5 }
+Function:        mbrot8
+Args:
+  - NumSpills:       '4'
+  - String:          ' spills '
+  - TotalSpillsCost: '6.501588e+01'
+  - String:          ' total spills cost '
+  - NumReloads:      '2'
+  - String:          ' reloads '
+  - TotalReloadsCost: '3.200000e+01'
+  - String:          ' total reloads cost '
+  - NumFoldedReloads: '5'
+  - String:          ' folded reloads '
+  - TotalFoldedReloadsCost: '7.241270e+01'
+  - String:          ' total folded reloads cost '
+  - String:          generated in loop
+...
+--- !Missed
+Pass:            regalloc
+Name:            SpillReloadCopies
+DebugLoc:        { File: main_save.c, Line: 49, Column: 1 }
+Function:        mbrot8
+Args:
+  - NumSpills:       '8'
+  - String:          ' spills '
+  - TotalSpillsCost: '6.901588e+01'
+  - String:          ' total spills cost '
+  - NumReloads:      '2'
+  - String:          ' reloads '
+  - TotalReloadsCost: '3.200000e+01'
+  - String:          ' total reloads cost '
+  - NumFoldedReloads: '7'
+  - String:          ' folded reloads '
+  - TotalFoldedReloadsCost: '7.339683e+01'
+  - String:          ' total folded reloads cost '
+  - NumVRCopies:     '1'
+  - String:          ' virtual registers copies '
+  - TotalCopiesCost: '4.920635e-01'
+  - String:          ' total copies cost '
+  - String:          generated in function
+...
+--- !Analysis
+Pass:            prologepilog
+Name:            StackSize
+DebugLoc:        { File: main_save.c, Line: 50, Column: 0 }
+Function:        mbrot8
+Args:
+  - NumStackBytes:   '8'
+  - String:          ' stack bytes in function '''
+  - Function:        mbrot8
+  - String:          ''''
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: main_save.c, Line: 0, Column: 0 }
+Function:        mbrot8
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          'vxorpd	'
+  - String:          ': '
+  - INST_vxorpd:     '11'
+  - String:          "\n"
+  - String:          'vmovupd	'
+  - String:          ': '
+  - INST_vmovupd:    '5'
+  - String:          "\n"
+  - String:          'vbroadcastsd	'
+  - String:          ': '
+  - INST_vbroadcastsd: '2'
+  - String:          "\n"
+  - String:          'vmovapd	'
+  - String:          ': '
+  - INST_vmovapd:    '2'
+  - String:          "\n"
+  - String:          'jmp	'
+  - String:          ': '
+  - INST_jmp:        '1'
+  - String:          "\n"
+  - String:          'mov	'
+  - String:          ': '
+  - INST_mov:        '1'
+  - String:          "\n"
+  - String:          'push	'
+  - String:          ': '
+  - INST_push:       '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: main_save.c, Line: 0, Column: 0 }
+Function:        mbrot8
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          'dec	'
+  - String:          ': '
+  - INST_dec:        '1'
+  - String:          "\n"
+  - String:          j
+  - String:          ': '
+  - INST_j:          '1'
+  - String:          "\n"
+  - String:          'vmovapd	'
+  - String:          ': '
+  - INST_vmovapd:    '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: main_save.c, Line: 0, Column: 0 }
+Function:        mbrot8
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          'vaddpd	'
+  - String:          ': '
+  - INST_vaddpd:     '48'
+  - String:          "\n"
+  - String:          'vmulpd	'
+  - String:          ': '
+  - INST_vmulpd:     '45'
+  - String:          "\n"
+  - String:          'vsubpd	'
+  - String:          ': '
+  - INST_vsubpd:     '15'
+  - String:          "\n"
+  - String:          'vmovapd	'
+  - String:          ': '
+  - INST_vmovapd:    '4'
+  - String:          "\n"
+  - String:          j
+  - String:          ': '
+  - INST_j:          '1'
+  - String:          "\n"
+  - String:          'vcmppd	'
+  - String:          ': '
+  - INST_vcmppd:     '1'
+  - String:          "\n"
+  - String:          'vmovupd	'
+  - String:          ': '
+  - INST_vmovupd:    '1'
+  - String:          "\n"
+  - String:          'vshufpd	'
+  - String:          ': '
+  - INST_vshufpd:    '1'
+  - String:          "\n"
+  - String:          'vtestpd	'
+  - String:          ': '
+  - INST_vtestpd:    '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: main_save.c, Line: 0, Column: 0 }
+Function:        mbrot8
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          j
+  - String:          ': '
+  - INST_j:          '1'
+  - String:          "\n"
+  - String:          'test	'
+  - String:          ': '
+  - INST_test:       '1'
+  - String:          "\n"
+  - String:          'vcmppd	'
+  - String:          ': '
+  - INST_vcmppd:     '1'
+  - String:          "\n"
+  - String:          'vmovmskpd	'
+  - String:          ': '
+  - INST_vmovmskpd:  '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: main_save.c, Line: 0, Column: 0 }
+Function:        mbrot8
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          j
+  - String:          ': '
+  - INST_j:          '1'
+  - String:          "\n"
+  - String:          'shr	'
+  - String:          ': '
+  - INST_shr:        '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: main_save.c, Line: 0, Column: 0 }
+Function:        mbrot8
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          j
+  - String:          ': '
+  - INST_j:          '1'
+  - String:          "\n"
+  - String:          'vmovsd	'
+  - String:          ': '
+  - INST_vmovsd:     '1'
+  - String:          "\n"
+  - String:          'vucomisd	'
+  - String:          ': '
+  - INST_vucomisd:   '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: main_save.c, Line: 0, Column: 0 }
+Function:        mbrot8
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          j
+  - String:          ': '
+  - INST_j:          '1'
+  - String:          "\n"
+  - String:          'vmovsd	'
+  - String:          ': '
+  - INST_vmovsd:     '1'
+  - String:          "\n"
+  - String:          'vucomisd	'
+  - String:          ': '
+  - INST_vucomisd:   '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: main_save.c, Line: 0, Column: 0 }
+Function:        mbrot8
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          'pop	'
+  - String:          ': '
+  - INST_pop:        '1'
+  - String:          "\n"
+  - String:          ret
+  - String:          ': '
+  - INST_ret:        '1'
+  - String:          "\n"
+  - String:          vzeroupper
+  - String:          ': '
+  - INST_vzeroupper: '1'
+  - String:          "\n"
+  - String:          'xor	'
+  - String:          ': '
+  - INST_xor:        '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+Function:        mbrot8
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          'vpackssdw	'
+  - String:          ': '
+  - INST_vpackssdw:  '4'
+  - String:          "\n"
+  - String:          'vpor	'
+  - String:          ': '
+  - INST_vpor:       '4'
+  - String:          "\n"
+  - String:          set
+  - String:          ': '
+  - INST_set:        '2'
+  - String:          "\n"
+  - String:          'vpacksswb	'
+  - String:          ': '
+  - INST_vpacksswb:  '2'
+  - String:          "\n"
+  - String:          'vpsrlw	'
+  - String:          ': '
+  - INST_vpsrlw:     '2'
+  - String:          "\n"
+  - String:          'vucomisd	'
+  - String:          ': '
+  - INST_vucomisd:   '2'
+  - String:          "\n"
+  - String:          'add	'
+  - String:          ': '
+  - INST_add:        '1'
+  - String:          "\n"
+  - String:          'or	'
+  - String:          ': '
+  - INST_or:         '1'
+  - String:          "\n"
+  - String:          'pop	'
+  - String:          ': '
+  - INST_pop:        '1'
+  - String:          "\n"
+  - String:          ret
+  - String:          ': '
+  - INST_ret:        '1'
+  - String:          "\n"
+  - String:          'vcmppd	'
+  - String:          ': '
+  - INST_vcmppd:     '1'
+  - String:          "\n"
+  - String:          'vextractf128	'
+  - String:          ': '
+  - INST_vextractf128: '1'
+  - String:          "\n"
+  - String:          'vmovd	'
+  - String:          ': '
+  - INST_vmovd:      '1'
+  - String:          "\n"
+  - String:          'vmovsd	'
+  - String:          ': '
+  - INST_vmovsd:     '1'
+  - String:          "\n"
+  - String:          'vpandn	'
+  - String:          ': '
+  - INST_vpandn:     '1'
+  - String:          "\n"
+  - String:          'vpblendvb	'
+  - String:          ': '
+  - INST_vpblendvb:  '1'
+  - String:          "\n"
+  - String:          'vpbroadcastw	'
+  - String:          ': '
+  - INST_vpbroadcastw: '1'
+  - String:          "\n"
+  - String:          'vpinsrb	'
+  - String:          ': '
+  - INST_vpinsrb:    '1'
+  - String:          "\n"
+  - String:          'vpsrld	'
+  - String:          ': '
+  - INST_vpsrld:     '1'
+  - String:          "\n"
+  - String:          'vxorpd	'
+  - String:          ': '
+  - INST_vxorpd:     '1'
+  - String:          "\n"
+  - String:          vzeroupper
+  - String:          ': '
+  - INST_vzeroupper: '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionCount
+DebugLoc:        { File: main_save.c, Line: 50, Column: 0 }
+Function:        mbrot8
+Args:
+  - NumInstructions: '190'
+  - String:          ' instructions in function'
+...
+--- !Analysis
+Pass:            prologepilog
+Name:            StackSize
+DebugLoc:        { File: main_save.c, Line: 106, Column: 0 }
+Function:        init_xloc
+Args:
+  - NumStackBytes:   '0'
+  - String:          ' stack bytes in function '''
+  - Function:        init_xloc
+  - String:          ''''
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: main_save.c, Line: 0, Column: 0 }
+Function:        init_xloc
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ret
+  - String:          ': '
+  - INST_ret:        '1'
+  - String:          "\n"
+  - String:          'vcvtsi2sd	'
+  - String:          ': '
+  - INST_vcvtsi2sd:  '1'
+  - String:          "\n"
+  - String:          'vfmadd213sd	'
+  - String:          ': '
+  - INST_vfmadd213sd: '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionCount
+DebugLoc:        { File: main_save.c, Line: 106, Column: 0 }
+Function:        init_xloc
+Args:
+  - NumInstructions: '3'
+  - String:          ' instructions in function'
+...
+--- !Missed
+Pass:            regalloc
+Name:            LoopSpillReloadCopies
+DebugLoc:        { File: main_save.c, Line: 137, Column: 9 }
+Function:        main
+Args:
+  - NumReloads:      '1'
+  - String:          ' reloads '
+  - TotalReloadsCost: '6.400000e+02'
+  - String:          ' total reloads cost '
+  - NumVRCopies:     '1'
+  - String:          ' virtual registers copies '
+  - TotalCopiesCost: '6.400000e+02'
+  - String:          ' total copies cost '
+  - String:          generated in loop
+...
+--- !Missed
+Pass:            regalloc
+Name:            LoopSpillReloadCopies
+DebugLoc:        { File: main_save.c, Line: 134, Column: 5 }
+Function:        main
+Args:
+  - NumSpills:       '1'
+  - String:          ' spills '
+  - TotalSpillsCost: '2.000000e+01'
+  - String:          ' total spills cost '
+  - NumReloads:      '3'
+  - String:          ' reloads '
+  - TotalReloadsCost: '6.800000e+02'
+  - String:          ' total reloads cost '
+  - NumFoldedReloads: '3'
+  - String:          ' folded reloads '
+  - TotalFoldedReloadsCost: '6.000000e+01'
+  - String:          ' total folded reloads cost '
+  - NumVRCopies:     '1'
+  - String:          ' virtual registers copies '
+  - TotalCopiesCost: '6.400000e+02'
+  - String:          ' total copies cost '
+  - String:          generated in loop
+...
+--- !Missed
+Pass:            regalloc
+Name:            LoopSpillReloadCopies
+DebugLoc:        { File: main_save.c, Line: 121, Column: 5 }
+Function:        main
+Args:
+  - NumSpills:       '2'
+  - String:          ' spills '
+  - TotalSpillsCost: '2.000000e+01'
+  - String:          ' total spills cost '
+  - NumReloads:      '2'
+  - String:          ' reloads '
+  - TotalReloadsCost: '2.000000e+01'
+  - String:          ' total reloads cost '
+  - NumFoldedReloads: '8'
+  - String:          ' folded reloads '
+  - TotalFoldedReloadsCost: '8.000000e+01'
+  - String:          ' total folded reloads cost '
+  - String:          generated in loop
+...
+--- !Missed
+Pass:            regalloc
+Name:            SpillReloadCopies
+DebugLoc:        { File: main_save.c, Line: 112, Column: 1 }
+Function:        main
+Args:
+  - NumSpills:       '16'
+  - String:          ' spills '
+  - TotalSpillsCost: '4.743750e+01'
+  - String:          ' total spills cost '
+  - NumReloads:      '7'
+  - String:          ' reloads '
+  - TotalReloadsCost: '7.020000e+02'
+  - String:          ' total reloads cost '
+  - NumFoldedReloads: '13'
+  - String:          ' folded reloads '
+  - TotalFoldedReloadsCost: '1.407812e+02'
+  - String:          ' total folded reloads cost '
+  - NumVRCopies:     '26'
+  - String:          ' virtual registers copies '
+  - TotalCopiesCost: '6.625938e+02'
+  - String:          ' total copies cost '
+  - String:          generated in function
+...
+--- !Analysis
+Pass:            prologepilog
+Name:            StackSize
+DebugLoc:        { File: main_save.c, Line: 113, Column: 0 }
+Function:        main
+Args:
+  - NumStackBytes:   '248'
+  - String:          ' stack bytes in function '''
+  - Function:        main
+  - String:          ''''
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: main_save.c, Line: 0, Column: 0 }
+Function:        main
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          'push	'
+  - String:          ': '
+  - INST_push:       '6'
+  - String:          "\n"
+  - String:          'cmp	'
+  - String:          ': '
+  - INST_cmp:        '1'
+  - String:          "\n"
+  - String:          j
+  - String:          ': '
+  - INST_j:          '1'
+  - String:          "\n"
+  - String:          'mov	'
+  - String:          ': '
+  - INST_mov:        '1'
+  - String:          "\n"
+  - String:          'sub	'
+  - String:          ': '
+  - INST_sub:        '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: main_save.c, Line: 0, Column: 0 }
+Function:        main
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          'mov	'
+  - String:          ': '
+  - INST_mov:        '3'
+  - String:          "\n"
+  - String:          'add	'
+  - String:          ': '
+  - INST_add:        '2'
+  - String:          "\n"
+  - String:          'call	'
+  - String:          ': '
+  - INST_call:       '1'
+  - String:          "\n"
+  - String:          cmov
+  - String:          ': '
+  - INST_cmov:       '1'
+  - String:          "\n"
+  - String:          'sar	'
+  - String:          ': '
+  - INST_sar:        '1'
+  - String:          "\n"
+  - String:          'test	'
+  - String:          ': '
+  - INST_test:       '1'
+  - String:          "\n"
+  - String:          'xor	'
+  - String:          ': '
+  - INST_xor:        '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: main_save.c, Line: 0, Column: 0 }
+Function:        main
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          'mov	'
+  - String:          ': '
+  - INST_mov:        '2'
+  - String:          "\n"
+  - String:          'call	'
+  - String:          ': '
+  - INST_call:       '1'
+  - String:          "\n"
+  - String:          j
+  - String:          ': '
+  - INST_j:          '1'
+  - String:          "\n"
+  - String:          'lea	'
+  - String:          ': '
+  - INST_lea:        '1'
+  - String:          "\n"
+  - String:          'movsxd	'
+  - String:          ': '
+  - INST_movsxd:     '1'
+  - String:          "\n"
+  - String:          'shl	'
+  - String:          ': '
+  - INST_shl:        '1'
+  - String:          "\n"
+  - String:          'test	'
+  - String:          ': '
+  - INST_test:       '1'
+  - String:          "\n"
+  - String:          'vcvtsi2sd	'
+  - String:          ': '
+  - INST_vcvtsi2sd:  '1'
+  - String:          "\n"
+  - String:          'vdivsd	'
+  - String:          ': '
+  - INST_vdivsd:     '1'
+  - String:          "\n"
+  - String:          'vmovapd	'
+  - String:          ': '
+  - INST_vmovapd:    '1'
+  - String:          "\n"
+  - String:          'vmovsd	'
+  - String:          ': '
+  - INST_vmovsd:     '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: main_save.c, Line: 0, Column: 0 }
+Function:        main
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          'cmp	'
+  - String:          ': '
+  - INST_cmp:        '1'
+  - String:          "\n"
+  - String:          j
+  - String:          ': '
+  - INST_j:          '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: main_save.c, Line: 0, Column: 0 }
+Function:        main
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          'jmp	'
+  - String:          ': '
+  - INST_jmp:        '1'
+  - String:          "\n"
+  - String:          'xor	'
+  - String:          ': '
+  - INST_xor:        '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: main_save.c, Line: 0, Column: 0 }
+Function:        main
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          'vbroadcastss	'
+  - String:          ': '
+  - INST_vbroadcastss: '7'
+  - String:          "\n"
+  - String:          'vmovaps	'
+  - String:          ': '
+  - INST_vmovaps:    '6'
+  - String:          "\n"
+  - String:          'and	'
+  - String:          ': '
+  - INST_and:        '2'
+  - String:          "\n"
+  - String:          'mov	'
+  - String:          ': '
+  - INST_mov:        '2'
+  - String:          "\n"
+  - String:          'vbroadcastsd	'
+  - String:          ': '
+  - INST_vbroadcastsd: '2'
+  - String:          "\n"
+  - String:          'shl	'
+  - String:          ': '
+  - INST_shl:        '1'
+  - String:          "\n"
+  - String:          'shr	'
+  - String:          ': '
+  - INST_shr:        '1'
+  - String:          "\n"
+  - String:          'vmovapd	'
+  - String:          ': '
+  - INST_vmovapd:    '1'
+  - String:          "\n"
+  - String:          'vmovdqa	'
+  - String:          ': '
+  - INST_vmovdqa:    '1'
+  - String:          "\n"
+  - String:          'xor	'
+  - String:          ': '
+  - INST_xor:        '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: main_save.c, Line: 0, Column: 0 }
+Function:        main
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          'vcvtdq2pd	'
+  - String:          ': '
+  - INST_vcvtdq2pd:  '8'
+  - String:          "\n"
+  - String:          'vfmadd213pd	'
+  - String:          ': '
+  - INST_vfmadd213pd: '8'
+  - String:          "\n"
+  - String:          'vmovupd	'
+  - String:          ': '
+  - INST_vmovupd:    '8'
+  - String:          "\n"
+  - String:          'vpor	'
+  - String:          ': '
+  - INST_vpor:       '7'
+  - String:          "\n"
+  - String:          'vunpckhpd	'
+  - String:          ': '
+  - INST_vunpckhpd:  '6'
+  - String:          "\n"
+  - String:          'vunpcklpd	'
+  - String:          ': '
+  - INST_vunpcklpd:  '6'
+  - String:          "\n"
+  - String:          'vblendpd	'
+  - String:          ': '
+  - INST_vblendpd:   '4'
+  - String:          "\n"
+  - String:          'vextractf128	'
+  - String:          ': '
+  - INST_vextractf128: '4'
+  - String:          "\n"
+  - String:          'vinsertf128	'
+  - String:          ': '
+  - INST_vinsertf128: '4'
+  - String:          "\n"
+  - String:          'vmovdqa	'
+  - String:          ': '
+  - INST_vmovdqa:    '2'
+  - String:          "\n"
+  - String:          'vmovups	'
+  - String:          ': '
+  - INST_vmovups:    '2'
+  - String:          "\n"
+  - String:          'add	'
+  - String:          ': '
+  - INST_add:        '1'
+  - String:          "\n"
+  - String:          'cmp	'
+  - String:          ': '
+  - INST_cmp:        '1'
+  - String:          "\n"
+  - String:          j
+  - String:          ': '
+  - INST_j:          '1'
+  - String:          "\n"
+  - String:          'vpaddd	'
+  - String:          ': '
+  - INST_vpaddd:     '1'
+  - String:          "\n"
+  - String:          'vpslld	'
+  - String:          ': '
+  - INST_vpslld:     '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: main_save.c, Line: 0, Column: 0 }
+Function:        main
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          'cmp	'
+  - String:          ': '
+  - INST_cmp:        '1'
+  - String:          "\n"
+  - String:          j
+  - String:          ': '
+  - INST_j:          '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: main_save.c, Line: 0, Column: 0 }
+Function:        main
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          'lea	'
+  - String:          ': '
+  - INST_lea:        '2'
+  - String:          "\n"
+  - String:          'vbroadcastsd	'
+  - String:          ': '
+  - INST_vbroadcastsd: '2'
+  - String:          "\n"
+  - String:          'add	'
+  - String:          ': '
+  - INST_add:        '1'
+  - String:          "\n"
+  - String:          'mov	'
+  - String:          ': '
+  - INST_mov:        '1'
+  - String:          "\n"
+  - String:          'shl	'
+  - String:          ': '
+  - INST_shl:        '1'
+  - String:          "\n"
+  - String:          'sub	'
+  - String:          ': '
+  - INST_sub:        '1'
+  - String:          "\n"
+  - String:          'vmovdqa	'
+  - String:          ': '
+  - INST_vmovdqa:    '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: main_save.c, Line: 0, Column: 0 }
+Function:        main
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          'lea	'
+  - String:          ': '
+  - INST_lea:        '3'
+  - String:          "\n"
+  - String:          'vpinsrd	'
+  - String:          ': '
+  - INST_vpinsrd:    '3'
+  - String:          "\n"
+  - String:          'add	'
+  - String:          ': '
+  - INST_add:        '2'
+  - String:          "\n"
+  - String:          'vcvtdq2pd	'
+  - String:          ': '
+  - INST_vcvtdq2pd:  '2'
+  - String:          "\n"
+  - String:          'vfmadd213pd	'
+  - String:          ': '
+  - INST_vfmadd213pd: '2'
+  - String:          "\n"
+  - String:          'vmovupd	'
+  - String:          ': '
+  - INST_vmovupd:    '2'
+  - String:          "\n"
+  - String:          'dec	'
+  - String:          ': '
+  - INST_dec:        '1'
+  - String:          "\n"
+  - String:          j
+  - String:          ': '
+  - INST_j:          '1'
+  - String:          "\n"
+  - String:          'vmovd	'
+  - String:          ': '
+  - INST_vmovd:      '1'
+  - String:          "\n"
+  - String:          'vpbroadcastd	'
+  - String:          ': '
+  - INST_vpbroadcastd: '1'
+  - String:          "\n"
+  - String:          'vpor	'
+  - String:          ': '
+  - INST_vpor:       '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: main_save.c, Line: 0, Column: 0 }
+Function:        main
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          'mov	'
+  - String:          ': '
+  - INST_mov:        '6'
+  - String:          "\n"
+  - String:          'call	'
+  - String:          ': '
+  - INST_call:       '2'
+  - String:          "\n"
+  - String:          'xor	'
+  - String:          ': '
+  - INST_xor:        '2'
+  - String:          "\n"
+  - String:          'imul	'
+  - String:          ': '
+  - INST_imul:       '1'
+  - String:          "\n"
+  - String:          j
+  - String:          ': '
+  - INST_j:          '1'
+  - String:          "\n"
+  - String:          'lea	'
+  - String:          ': '
+  - INST_lea:        '1'
+  - String:          "\n"
+  - String:          'movsxd	'
+  - String:          ': '
+  - INST_movsxd:     '1'
+  - String:          "\n"
+  - String:          'test	'
+  - String:          ': '
+  - INST_test:       '1'
+  - String:          "\n"
+  - String:          vzeroupper
+  - String:          ': '
+  - INST_vzeroupper: '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: main_save.c, Line: 0, Column: 0 }
+Function:        main
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          'mov	'
+  - String:          ': '
+  - INST_mov:        '3'
+  - String:          "\n"
+  - String:          'xor	'
+  - String:          ': '
+  - INST_xor:        '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: main_save.c, Line: 0, Column: 0 }
+Function:        main
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          'mov	'
+  - String:          ': '
+  - INST_mov:        '2'
+  - String:          "\n"
+  - String:          'vmovsd	'
+  - String:          ': '
+  - INST_vmovsd:     '2'
+  - String:          "\n"
+  - String:          'add	'
+  - String:          ': '
+  - INST_add:        '1'
+  - String:          "\n"
+  - String:          'vcvtsi2sd	'
+  - String:          ': '
+  - INST_vcvtsi2sd:  '1'
+  - String:          "\n"
+  - String:          'vfmadd132sd	'
+  - String:          ': '
+  - INST_vfmadd132sd: '1'
+  - String:          "\n"
+  - String:          'vxorps	'
+  - String:          ': '
+  - INST_vxorps:     '1'
+  - String:          "\n"
+  - String:          'xor	'
+  - String:          ': '
+  - INST_xor:        '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: main_save.c, Line: 0, Column: 0 }
+Function:        main
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          'mov	'
+  - String:          ': '
+  - INST_mov:        '2'
+  - String:          "\n"
+  - String:          'add	'
+  - String:          ': '
+  - INST_add:        '1'
+  - String:          "\n"
+  - String:          'call	'
+  - String:          ': '
+  - INST_call:       '1'
+  - String:          "\n"
+  - String:          'cmp	'
+  - String:          ': '
+  - INST_cmp:        '1'
+  - String:          "\n"
+  - String:          'inc	'
+  - String:          ': '
+  - INST_inc:        '1'
+  - String:          "\n"
+  - String:          j
+  - String:          ': '
+  - INST_j:          '1'
+  - String:          "\n"
+  - String:          'vmovsd	'
+  - String:          ': '
+  - INST_vmovsd:     '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: main_save.c, Line: 0, Column: 0 }
+Function:        main
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          'add	'
+  - String:          ': '
+  - INST_add:        '1'
+  - String:          "\n"
+  - String:          'cmp	'
+  - String:          ': '
+  - INST_cmp:        '1'
+  - String:          "\n"
+  - String:          'inc	'
+  - String:          ': '
+  - INST_inc:        '1'
+  - String:          "\n"
+  - String:          j
+  - String:          ': '
+  - INST_j:          '1'
+  - String:          "\n"
+  - String:          'mov	'
+  - String:          ': '
+  - INST_mov:        '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: main_save.c, Line: 0, Column: 0 }
+Function:        main
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          'mov	'
+  - String:          ': '
+  - INST_mov:        '21'
+  - String:          "\n"
+  - String:          'call	'
+  - String:          ': '
+  - INST_call:       '19'
+  - String:          "\n"
+  - String:          'xor	'
+  - String:          ': '
+  - INST_xor:        '18'
+  - String:          "\n"
+  - String:          'movzx	'
+  - String:          ': '
+  - INST_movzx:      '16'
+  - String:          "\n"
+  - String:          'pop	'
+  - String:          ': '
+  - INST_pop:        '6'
+  - String:          "\n"
+  - String:          'add	'
+  - String:          ': '
+  - INST_add:        '1'
+  - String:          "\n"
+  - String:          'lea	'
+  - String:          ': '
+  - INST_lea:        '1'
+  - String:          "\n"
+  - String:          ret
+  - String:          ': '
+  - INST_ret:        '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionCount
+DebugLoc:        { File: main_save.c, Line: 113, Column: 0 }
+Function:        main
+Args:
+  - NumInstructions: '279'
+  - String:          ' instructions in function'
+...
