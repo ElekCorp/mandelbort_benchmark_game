@@ -49,6 +49,21 @@ pub fn main() !void {
     var hash: [16]u8 = undefined;
     md5.hash(pixels.items, &hash, .{});
     try stdout.print("{}\n", .{std.fmt.fmtSliceHexLower(&hash)});
+
+    // Open the file for writing
+    const file_name = "refzig.bmp";
+
+    var file = try std.fs.cwd().createFile(file_name, .{});
+    defer file.close();
+
+    // Get a writer for the file
+    var writer = file.writer();
+
+    // Write to the file
+    try writer.print("P4\n{d} {d}\n", .{ size, size });
+    //try writer.print("{b}", .{pixels.items});
+    //for (pixels.items) |item| try writer.print("{b}", .{item});
+    try file.writeAll(pixels.items);
 }
 
 fn mbrot8(cr: Vec, civ: f64) u8 {
